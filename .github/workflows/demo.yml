@@ -20,7 +20,7 @@ jobs:
         with:
           name: testing-is-done
           path:
-            dist
+            dist/
   build:
     needs: test
     runs-on: ubuntu-latest
