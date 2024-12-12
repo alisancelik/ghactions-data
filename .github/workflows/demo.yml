@@ -16,7 +16,7 @@ jobs:
       - name: Test code
         run: npm run test
       - name: Upload Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
   build:
     needs: test
     runs-on: ubuntu-latest
