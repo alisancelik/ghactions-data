@@ -17,6 +17,10 @@ jobs:
         run: npm run test
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
+        with:
+          name: testing-is-done
+          path:
+            dist
   build:
     needs: test
     runs-on: ubuntu-latest
